@@ -16,6 +16,13 @@ For development mode with auto-reloading, use:
 npm run start:dev
 ```
 
+## Running Redis with Docker
+To ensure Redis is running, start it using Docker:
+```sh
+docker-compose up -d
+```
+This will start a Redis container on port `6379`.
+
 ## Testing the Service
 The main service to test is the **User Service**, accessible via the following API:
 
@@ -33,4 +40,3 @@ http://localhost:8000/user
 
 If successful, the response will be a JSON object containing users grouped by department.
 
----
